@@ -1,13 +1,13 @@
 import { cn } from "@/lib/util";
 import { forwardRef } from "react";
 
-export interface ButtonProps 
-    extends React.ButtonHTMLAttributes<HTMLButtonElement> {}
+export type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement>
 
 const Button = forwardRef<HTMLButtonElement, ButtonProps>(({
     className,
     children,
     disabled,
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     type = "button",
     ...props
 }, ref) => {
